@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+  --formBGColor: rgba(152,197,233,.5);
+}
+
+#app{
+  display: grid;
+  grid-template-columns: minmax(auto, 1fr);
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  padding: 0 0 0.67em 0;
+  color: black;
+}
+
+header {
+  text-align: center;
+  justify-self: stretch;
+  align-self: start;
+}
+
+main {
+  justify-self: stretch;
+  display: grid;
+  grid-template-columns: 30vw 1fr 30vw;
+  padding: 2px;
+}
+
+#survey-form {
+  border-radius: 5px;
+  display: grid;
+  padding: 5px;
+  grid-column: 2/3;
+  background-color: var(--formBGColor, lightgray);
+}
+
+#survey-form > fieldset {
+  display: flex; 
+  flex-direction: column;
+  color: black;
+}
+
+#survey-form > button{
+  border-radius: 15px;
+}
+
+#survey-form > *+*{
+  margin-top: 2vh;
+}
+
+.label-input {
+  display: flex; 
+  flex-direction: column;
+}
+
+.label-input > textarea{
+  resize: vertical;
+}

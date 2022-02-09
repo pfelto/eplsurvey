@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Paul&#39;s Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+<header>
+  <h1 id="title">English Premier League Survey</h1>
+  <p id="description">Thank you for giving us your input!</p>
+</header>
+<main>
+  <form id="survey-form" onsubmit="return false">
+    <div class="label-input">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter your name..."   required>
+    </div>
+    <div class="label-input">    
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter your email..." required>
+    </div>
+    <div class="label-input">     
+      <label for="number" id="number-label">How many games have you seen this year?</label>
+      <input type="number" id="number" placeholder="number of games..." min=1 max=1000>
+    </div>
+    <div class="label-input">     
+      <label for="dropdown">Pick your favorite team</label>
+      <select id="dropdown">
+      <option value="arsenal">
+        Arsenal
+      </option>
+      <option value="astonvilla">
+        Aston Villa
+      </option>
+      <option value="brentford">
+        Brentford
+      </option>
+            <option value="brighton">
+        Brighton
+      </option>
+      <option value="burnley">
+        Burnley
+      </option>
+      <option value="chelsea">
+        Chelsea
+      </option>
+            <option value="crystalpalace">
+        Crystal Palace
+      </option>
+      <option value="everton">
+        Everton
+      </option>
+      <option value="leeds">
+        Leeds
+      </option>
+            <option value="leicester">
+        Leicester
+      </option>
+      <option value="liverpool">
+        Liverpool
+      </option>
+      <option value="manchestercity" selected>
+        M. City
+      </option>
+            <option value="manchesterunited">
+        M. United
+      </option>
+      <option value="newcastle">
+        Newcastle
+      </option>
+      <option value="norwichcity">
+        Norwich City
+      </option>
+            <option value="southampton">
+        Southampton
+      </option>
+      <option value="tottenham">
+        Tottenham
+      </option>
+      <option value="watford">
+        Watford
+      </option>
+      <option value="westham">
+        West Ham
+      </option>
+      <option value="wolves">
+        Wolves
+      </option>
+    </select>
+    </div>
+    <fieldset>
+      <legend>What is your level of fandom</legend>
+      <div>
+      <input id="novice" type="radio" name="fandom" value="novice">
+      <label for="novice">Novice</label>
+      </div>
+      <div>
+      <input id="common" type="radio" name="fandom" value="common">
+      <label for="common">Common</label>
+      </div>
+      <div>
+      <input id="diehard" type="radio" name="fandom" value="diehard">
+      <label for="diehard">Die-Hard</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>
+        What position(s) do you like?
+      </legend>
+      <div>
+      <input id="defense" type="checkbox" value="defense">
+      <label for="defense">Defense</label>
+      </div>
+      <div >
+      <input id="midfield" type="checkbox" value="midfield">
+      <label for="midfield">Midfield</label>
+      </div>
+      <div>
+      <input id="attack" type="checkbox" value="attack">
+      <label for="attack">Attack</label>
+      </div>
+    </fieldset>
+    <div class="label-input">
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments">
+      </textarea>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+ 
+  
+  </main>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
